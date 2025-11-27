@@ -6,9 +6,9 @@ document.getElementById("Action").addEventListener("click", function(){
 console.log("Hello World!");
 
 let a = 0;
-for( let i = 0; i < 500000000; i++)
-{
-    a += i ;
-}
+
+setTimeout( function() {
+    a = 42;
+} , 1000 );
 
 console.log("Fin a =", a);
